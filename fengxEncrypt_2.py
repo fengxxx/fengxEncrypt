@@ -11,7 +11,8 @@ def encrypt(s,key):
 def decrypt(s,key):
     #dStr=""
     #eStr=s[::-1]
-    eStr=s.replace("曾哥", "", [count]) 
+    #eStr=s.replace("曾哥", "", [count]) 
+    eStr=s.strip("曾哥")
     return eStr
 
 def enFile(filePath,targetPath,key):
@@ -39,7 +40,7 @@ def main():
     filePath=sys.argv[1]
     tS=os.path.split(filePath)
     fileOutPath=tS[0]+"\\"+os.path.splitext(tS[1])[0] +"_fengx" + os.path.splitext(tS[1])[1]
-    enFile(filePath,fileOutPath,"s")
+    deFile(filePath,fileOutPath,"s")
     print ("加密文件-->>"+filePath)
     print ("输出文件-->>"+fileOutPath)
 main()
