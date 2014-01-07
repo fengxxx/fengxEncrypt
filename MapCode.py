@@ -44,5 +44,6 @@ def toString_BMP(filePath):
 
     fileC.close()
     print mapInfor
-bmpPath="E:\\GitHub\\fengxEncrypt\\testPNG.bmp"
+bmpPath="K:\\fengxEncrypt\\testPNG.bmp"
+#bmpPath="E:\\GitHub\\fengxEncrypt\\testPNG.bmp"
 toString_BMP(bmpPath)
