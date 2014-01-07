@@ -3,8 +3,8 @@
 import sys
 import os
 import struct
-import win32com.client
 
+import mapCode 
 fengxMark="fengxEncrypt\n"
 
 key=[1,2,1,2,1,2,1,2,1,2,1,2,1,2]
@@ -124,10 +124,12 @@ def fengxEorD(filePath,key):
         print ("输出文件-->>"+fileOutPath)
 
 
+
 try:
     sys.argv[1]
 except:
-    test="K:\\fengxEncrypt\\1.jpg"
+    test="E:\\GitHub\\fengxEncrypt\\1.jpg"
+    #test="K:\\fengxEncrypt\\1.jpg"
     #test="K:\\fengxEncrypt\\fengxTest.txt"
     fengxEorD(test,"fengx")
     print "没有拖拽！"
