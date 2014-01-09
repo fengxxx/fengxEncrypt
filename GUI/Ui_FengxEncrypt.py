@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'K:\fengxEncrypt\GUI\FengxEncrypt.ui'
+# Form implementation generated from reading ui file 'E:\GitHub\fengxEncrypt\GUI\fengxEncrypt.ui'
 #
-# Created: Thu Jan 09 00:20:50 2014
-#      by: PyQt4 UI code generator 4.10
+# Created: Thu Jan 09 19:58:01 2014
+#      by: PyQt4 UI code generator 4.9.6
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -26,37 +26,59 @@ except AttributeError:
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
-        MainWindow.resize(358, 370)
-        MainWindow.setStyleSheet(_fromUtf8(""))
-        self.centralwidget = QtGui.QWidget(MainWindow)
-        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
-        self.toolButton_2 = QtGui.QToolButton(self.centralwidget)
-        self.toolButton_2.setGeometry(QtCore.QRect(100, 60, 91, 71))
-        self.toolButton_2.setObjectName(_fromUtf8("toolButton_2"))
-        self.progressBar = QtGui.QProgressBar(self.centralwidget)
-        self.progressBar.setGeometry(QtCore.QRect(10, 140, 181, 20))
-        self.progressBar.setProperty("value", 24)
-        self.progressBar.setObjectName(_fromUtf8("progressBar"))
-        self.toolButton = QtGui.QToolButton(self.centralwidget)
-        self.toolButton.setGeometry(QtCore.QRect(10, 60, 91, 71))
-        self.toolButton.setStyleSheet(_fromUtf8(""))
-        self.toolButton.setObjectName(_fromUtf8("toolButton"))
-        self.label = QtGui.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(9, 9, 48, 27))
+        MainWindow.resize(222, 137)
+        self.centralWidget = QtGui.QWidget(MainWindow)
+        self.centralWidget.setObjectName(_fromUtf8("centralWidget"))
+        self.pushButton = QtGui.QPushButton(self.centralWidget)
+        self.pushButton.setGeometry(QtCore.QRect(20, 60, 90, 61))
+        font = QtGui.QFont()
+        font.setFamily(_fromUtf8("Berlin Sans FB"))
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton.setFont(font)
+        self.pushButton.setObjectName(_fromUtf8("pushButton"))
+        self.label = QtGui.QLabel(self.centralWidget)
+        self.label.setGeometry(QtCore.QRect(20, 20, 51, 31))
+        font = QtGui.QFont()
+        font.setFamily(_fromUtf8("Berlin Sans FB"))
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label.setFont(font)
         self.label.setObjectName(_fromUtf8("label"))
-        self.lineEdit = QtGui.QLineEdit(self.centralwidget)
-        self.lineEdit.setGeometry(QtCore.QRect(60, 20, 133, 20))
+        self.lineEdit = QtGui.QLineEdit(self.centralWidget)
+        self.lineEdit.setGeometry(QtCore.QRect(80, 13, 121, 31))
+        font = QtGui.QFont()
+        font.setFamily(_fromUtf8("Berlin Sans FB"))
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.lineEdit.setFont(font)
+        self.lineEdit.setInputMask(_fromUtf8(""))
         self.lineEdit.setMaxLength(8)
+        self.lineEdit.setAlignment(QtCore.Qt.AlignBottom|QtCore.Qt.AlignHCenter)
         self.lineEdit.setObjectName(_fromUtf8("lineEdit"))
-        MainWindow.setCentralWidget(self.centralwidget)
+        self.pushButton_2 = QtGui.QPushButton(self.centralWidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(110, 60, 93, 61))
+        font = QtGui.QFont()
+        font.setFamily(_fromUtf8("Berlin Sans FB"))
+        font.setPointSize(16)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setObjectName(_fromUtf8("pushButton_2"))
+        MainWindow.setCentralWidget(self.centralWidget)
 
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
-        self.toolButton_2.setText(_translate("MainWindow", "è§£å¯†", None))
-        self.lineEdit.setText(_translate("MainWindow", "123", None))
+        self.pushButton.setText(_translate("MainWindow", "Encrypt", None))
+        self.label.setText(_translate("MainWindow", "KEY:", None))
+        self.lineEdit.setText(_translate("MainWindow", "xxxxxxxx", None))
+        self.pushButton_2.setText(_translate("MainWindow", "Decrypt", None))
 
 
 if __name__ == "__main__":

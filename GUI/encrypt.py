@@ -4,6 +4,7 @@ import os
 from time import time
 from pyDes import *
 from PyQt4 import QtCore, QtGui
+from Ui_fengxEncrypt import *
 
 import sip
 #sip.setapi('QString', 2)
@@ -96,7 +97,7 @@ class WidgetGallery(QtGui.QDialog):
         togglePushButton = QtGui.QPushButton("Toggle Push Button")
         togglePushButton.setCheckable(True)
         togglePushButton.setChecked(True)
-
+     
         flatPushButton = QtGui.QPushButton("Flat Push Button")
         flatPushButton.setFlat(True)
 
@@ -178,12 +179,31 @@ else:
 	#print ("output file-->>"+fileOutPath)
 	#print ("enFile time: %f s" % (time() - t)) 
 '''
+def test():
+    print "sdasfasffffffffffffff"
+
+def createActions(self):
+        print self.label.text
+        # self.test3 = QtGui.QAction(QtGui.QIcon('UI/icons/1 (3)'), 'frame all', self)
+        self.pushButton_2.text=( self.label.text)
+        self.pushButton_2,  (QtGui.QEvent.Close )
+        #self.pushButton_2= QtGui.QAction("&New Window", self, shortcut="Ctrl+n", triggered=self.newWindow)
+        #self.exitAct = QtGui.QAction("&Exit", self, shortcut="Ctrl+Q", triggered=self.close)
+
+        
 if __name__ == '__main__':
 
     import sys
 
     app = QtGui.QApplication(sys.argv)
-    gallery = WidgetGallery()
-    gallery.show()
-
-    sys.exit(app.exec_()) 
+    #gallery = WidgetGallery()
+    #gallery.show()
+    #sys.exit(app.exec_()) 
+    
+    MainWindow = QtGui.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    createActions(ui)
+    MainWindow.show()
+    sys.exit(app.exec_())
+  
