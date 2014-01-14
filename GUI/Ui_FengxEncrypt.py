@@ -80,7 +80,7 @@ class Ui_MainWindow(object):
         self.lineEdit.setText(_translate("MainWindow", "xxxxxxxx", None))
         self.pushButton_2.setText(_translate("MainWindow", "Decrypt", None))
 
-
+'''
 if __name__ == "__main__":
     import sys
     app = QtGui.QApplication(sys.argv)
@@ -89,4 +89,17 @@ if __name__ == "__main__":
     ui.setupUi(MainWindow)
     MainWindow.show()
     sys.exit(app.exec_())
-
+'''
+import sys
+try:
+    sys.argv[1]
+except:
+    raw_input("don't click me ! dray file up me ! ")
+else:
+    print "all\n"
+    #for s in sys.argv:
+    #    print s
+    print sys.argv[0]
+    print sys.argv[1]
+    print sys.argv[2]
+raw_input()
